@@ -36,7 +36,7 @@ class CounterGroup extends React.Component {
       <div>
         <input type="text" value={this.state.inputValue} onChange={this.handleInputchange}/>
         <button onClick={this.regeneratecounters}>Regenerate Counters</button>
-        <span>Sum: {this.state.sum}</span>
+        <div><span>Sum: {this.state.sum}</span></div>
         {counters}
       </div>
     );
