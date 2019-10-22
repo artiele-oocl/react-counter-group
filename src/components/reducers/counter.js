@@ -4,6 +4,10 @@ const counterReducer = (state = 0, action) => {
             return state + 1;
         case 'DECREMENT':
             return state - 1;
+        case 'MULTIPLY_BY_2':
+            return state * 2;
+        case 'DIVIDE_BY_2':
+            return state / 2;
         default:
             return state;
     }

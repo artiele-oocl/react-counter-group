@@ -8,3 +8,13 @@ export const decrement = () => {
         type: 'DECREMENT'
     }
 };
+export const multiplyBy2 = () => {
+    return {
+        type: 'MULTIPLY_BY_2'
+    }
+};
+export const divideBy2 = () => {
+    return {
+        type: 'DIVIDE_BY_2'
+    }
+};
