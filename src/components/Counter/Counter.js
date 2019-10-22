@@ -1,6 +1,6 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {increment, decrement, multiplyBy2, divideBy2} from '../actions';
+import {increment, decrement, multiplyBy2, divideBy2, reset} from '../actions';
 
 function Counter() {  
     const counter = useSelector(state => state.counter);
@@ -12,6 +12,7 @@ function Counter() {
             <button onClick = {()=>dispatch(decrement())}>-</button>
             <button onClick = {()=>dispatch(multiplyBy2())}>*2</button>
             <button onClick = {()=>dispatch(divideBy2())}>/2</button>
+            <button onClick = {()=>dispatch(reset())}>R</button>
         </div>
     );
 }

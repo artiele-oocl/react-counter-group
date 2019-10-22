@@ -8,6 +8,8 @@ const counterReducer = (state = 0, action) => {
             return state * 2;
         case 'DIVIDE_BY_2':
             return state / 2;
+        case 'RESET':
+            return 0;
         default:
             return state;
     }

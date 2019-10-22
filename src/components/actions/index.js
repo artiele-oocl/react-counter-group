@@ -18,3 +18,8 @@ export const divideBy2 = () => {
         type: 'DIVIDE_BY_2'
     }
 };
+export const reset = () => {
+    return {
+        type: 'RESET'
+    }
+};
